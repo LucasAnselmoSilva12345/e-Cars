@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+@import url('https://css.gg/profile.css');
+@import url('https://css.gg/chevron-right-o.css');
+@import url('https://css.gg/facebook.css');
+@import url('https://css.gg/instagram.css');
+@import url('https://css.gg/twitter.css');
+@import url('https://css.gg/code-slash.css');
+@import url('https://css.gg/link.css');
+@import url('https://css.gg/arrow-left.css');
+@import url('https://css.gg/arrow-right.css');
+@import url('https://css.gg/close-r.css');
+@import url('https://css.gg/danger.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem 'Nunito', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #777;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 20px;
+}

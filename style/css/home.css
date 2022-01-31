@@ -1,0 +1,391 @@
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(32, 33, 36, 0.5),
+      rgba(32, 33, 36, 0.5)
+    ),
+    url(../../assets/background/image1.png);
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
+  animation: slide 20s infinite;
+}
+
+@keyframes slide {
+  25% {
+    background-image: linear-gradient(
+        rgba(32, 33, 36, 0.5),
+        rgba(32, 33, 36, 0.5)
+      ),
+      url(../../assets/background/image2.png);
+  }
+  50% {
+    background-image: linear-gradient(
+        rgba(32, 33, 36, 0.5),
+        rgba(32, 33, 36, 0.5)
+      ),
+      url(../../assets/background/image3.png);
+  }
+  75% {
+    background-image: linear-gradient(
+        rgba(32, 33, 36, 0.5),
+        rgba(32, 33, 36, 0.5)
+      ),
+      url(../../assets/background/image4.png);
+  }
+  100% {
+    background-image: linear-gradient(
+        rgba(32, 33, 36, 0.5),
+        rgba(32, 33, 36, 0.5)
+      ),
+      url(../../assets/background/image5.jpg);
+  }
+}
+
+nav {
+  background: rgba(32, 33, 36, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 7.1875rem;
+}
+
+.logo {
+  width: 11.25rem;
+  cursor: pointer;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0.625rem 1.875rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.register-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.content-header,
+.container {
+  padding: 0 8.75rem;
+}
+
+.content-header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.search-bar {
+  background: #fff;
+  width: 50%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-bar form label {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.search-bar form input {
+  display: flex;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button {
+  background: #ff5361;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar form button i {
+  color: #fff;
+}
+
+.location-input {
+  flex: 1;
+}
+
+/* -----Exclusives------- */
+.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.exclusives div {
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.exclusives div:hover {
+  filter: brightness(70%);
+}
+
+.exclusives div img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.exclusives div span {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* --------Trending places----------- */
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trending div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trending div h3 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* --------------Call to action-----------  */
+.cta {
+  margin: 80px 0;
+  background-image: linear-gradient(to right, #3f2321, transparent),
+    url(../../assets/banner/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+
+.cta h3 {
+  font-size: 3.25rem;
+  line-height: 5rem;
+  font-weight: 500;
+}
+
+.cta p {
+  font-size: 1.125rem;
+  margin: 10px 0;
+}
+
+.cta p span {
+  color: rgb(51, 99, 201);
+  font-weight: 700;
+}
+
+.cta-btn {
+  background: #5a332e;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.cta-btn:hover {
+  filter: brightness(80%);
+}
+
+/* ------------Most Sought After ------------- */
+.mostSoughtAfter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.mostSoughtAfter div img {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.mostSoughtAfter div {
+  position: relative;
+  text-align: center;
+}
+
+.mostSoughtAfter p {
+  color: #333;
+  font-size: 18px;
+}
+
+.offers-btn {
+  background: #ff5361;
+  color: #fff;
+  width: 80%;
+  max-width: 350px;
+  display: block;
+  text-align: center;
+  margin: 60px auto;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
+
+  transition: 0.2s;
+}
+
+.offers-btn:hover {
+  filter: brightness(70%);
+}
+
+/* About e-Cars */
+
+.about-msg {
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.about-msg h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* ---------- Footer ---------*/
+.footer {
+  text-align: center;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.content-footer a {
+  color: #999;
+  font-size: 22px;
+  margin-bottom: 10px;
+
+  transition: 0.2s;
+}
+
+.content-footer a:hover {
+  padding-bottom: 10px;
+}
+
+.footer hr {
+  background: #999;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
+}
+
+.footer p {
+  padding-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive */
+@media only screen and (max-width: 700px) {
+  .content-header h1 {
+    padding-top: 200px;
+    font-size: 36px;
+  }
+  .search-bar {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 10px 30px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .search-bar form {
+    display: block;
+  }
+  .search-bar form input {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search-bar form button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+  .cta {
+    padding: 15% 5%;
+  }
+  .cta h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .cta p {
+    font-size: 0.875rem;
+  }
+  .cta-btn {
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .offers-btn {
+    font-size: 16px;
+  }
+  .about-msg {
+    font-size: 15px;
+  }
+}

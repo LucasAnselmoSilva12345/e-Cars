@@ -1,0 +1,153 @@
+.product-details {
+  padding: 0 170px;
+}
+
+.product-title {
+  margin-top: 50px;
+}
+
+.product-title h1 {
+  font-weight: 700;
+}
+
+.product-title span {
+  color: #f3123c;
+}
+
+.product-title .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.product-title span {
+  font-weight: 500;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'main main . .' 'main main . .';
+  margin: 20px 0;
+}
+
+.gallery div img {
+  border-radius: 10px;
+}
+
+.gallery-img-main {
+  grid-area: main;
+}
+
+.small-details h3 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.small-details p {
+  display: flex;
+  gap: 0.5rem;
+  color: #222;
+}
+
+.gg-danger {
+  color: #ffe066;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0 50px;
+}
+
+/* form */
+
+.details-list {
+  margin: 50px 0;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.details-list li {
+  margin: 0 25px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.details-list li span {
+  color: #555;
+  display: block;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.home-desc {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.map {
+  margin: 50px 0;
+}
+
+.map h4 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.map iframe {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.map strong {
+  display: block;
+  text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+  .product-details {
+    margin-top: 150px;
+  }
+  .row p {
+    margin-top: 10px;
+  }
+  .gallery {
+    grid-template-areas: 'main main' '. .' '. .';
+  }
+  .small-details h3 {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+  .details-list {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .details-list li {
+    margin: 0;
+  }
+  .home-desc {
+    text-align: center;
+  }
+  .map {
+    text-align: center;
+  }
+  .map iframe {
+    display: none;
+  }
+  .map strong {
+    display: block;
+    text-align: center;
+  }
+}
