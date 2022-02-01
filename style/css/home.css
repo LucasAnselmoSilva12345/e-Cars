@@ -187,14 +187,15 @@ nav {
   margin-bottom: 30px;
 }
 
-.trending div img {
+.trending div a img {
   width: 100%;
   border-radius: 10px;
 }
 
-.trending div h3 {
+.trending div a h3 {
   font-weight: 500;
   margin-top: 10px;
+  color: #333;
 }
 
 /* --------------Call to action-----------  */
@@ -261,6 +262,7 @@ nav {
 .mostSoughtAfter p {
   color: #333;
   font-size: 18px;
+  margin-top: 0.3125rem;
 }
 
 .offers-btn {

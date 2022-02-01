@@ -19,11 +19,11 @@
         />
       </a>
       <ul class="nav-links">
-        <li><a href="#">Comprar</a></li>
-        <li><a href="#">Vender</a></li>
-        <li><a href="#">Serviços</a></li>
+        <li><a href="/pages/Offers/index.html">Comprar</a></li>
+        <li><a href="/pages/Sell/index.html">Vender</a></li>
+        <li><a href="/pages/Services/index.html">Serviços</a></li>
       </ul>
-      <a href="#" class="register-btn">
+      <a href="#" data-modal="open" class="register-btn">
         <i class="gg-profile"></i>
         Faça seu login
       </a>
@@ -107,7 +107,7 @@
               />
             </div>
             <div class="car-info">
-              <h3>Chevrolet <span>Pŕisma</span></h3>
+              <h3>Chevrolet <span>Prisma</span></h3>
               <p>1.0 MPFI JOY 8V FLEX 4P MANUAL</p>
               <p>Casca,RS / KM 59.500 / Cinza / Sedã</p>
               <div class="car-price">
@@ -136,7 +136,7 @@
                 <p>ou 108x de R$ 915,74</p>
               </div>
               <div class="car-buy">
-                <a href="/"> Comprar agora </a>
+                <a href="/pages/Product_Details/index.html"> Comprar agora </a>
               </div>
             </div>
           </div>
@@ -259,6 +259,72 @@
         <p>Copyright ©️ 2022 - Lucas Anselmo Moraes Da Silva</p>
       </footer>
     </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="wrapper">
+        <i class="gg-close-r" data-modal="close"></i>
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">SignUp Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked />
+            <input type="radio" name="slider" id="signup" />
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slide-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="" class="login">
+              <div class="field">
+                <input type="text" placeholder="Informe seu email" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Informe sua senha"
+                  required
+                />
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field">
+                <input type="submit" value="Login" />
+              </div>
+
+              <div class="signup-link">
+                Not a member? <a href="#">Signup now</a>
+              </div>
+            </form>
+            <form action="" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Username" required />
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Seu melhor email" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Informe sua senha"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="/js/script.js"></script>
   </body>
