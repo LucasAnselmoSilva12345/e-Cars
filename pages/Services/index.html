@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/icon/car.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style/styles.css" />
+    <title>e-Cars | Serviços</title>
+  </head>
+  <body>
+    <nav data-menu="list" class="navbar-white">
+      <a href="/">
+        <img
+          src="/assets/ecarsBuy.svg"
+          loading="lazy"
+          class="logo"
+          alt="E-cars"
+        />
+      </a>
+      <ul class="nav-links">
+        <li><a href="/pages/Offers/index.html">Comprar</a></li>
+        <li><a href="/pages/Sell/index.html">Vender</a></li>
+        <li><a href="/pages/Services/index.html">Serviços</a></li>
+      </ul>
+      <a href="#" data-modal="open" class="register-btn">
+        <i class="gg-profile"></i>
+        Faça seu login
+      </a>
+      <i class="gg-menu"></i>
+    </nav>
+
+    <section class="modal-container" data-modal="container">
+      <div class="wrapper">
+        <i class="gg-close-r" data-modal="close"></i>
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">SignUp Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked />
+            <input type="radio" name="slider" id="signup" />
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slide-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="" class="login">
+              <div class="field">
+                <input type="text" placeholder="Informe seu email" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Informe sua senha"
+                  required
+                />
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field">
+                <input type="submit" value="Login" />
+              </div>
+
+              <div class="signup-link">
+                Not a member? <a href="#">Signup now</a>
+              </div>
+            </form>
+            <form action="" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Username" required />
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Seu melhor email" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Informe sua senha"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
