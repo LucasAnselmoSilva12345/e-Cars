@@ -2,8 +2,21 @@
   "name": "e-cars",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
   "license": "MIT",
   "dependencies": {
     "css.gg": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.8.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }
