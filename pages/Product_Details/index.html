@@ -140,7 +140,8 @@
           quasi quaerat voluptates.
         </p>
 
-        <section id="form">
+        <a href="#" data-form="toggleForm">form</a>
+        <section id="form" class="activeForm" data-form="form">
           <h2>Formulário de interesse na compra do veiculo</h2>
           <p>
             Esse formulário deve ser preenchido para que o dono desse veiculo,
@@ -151,75 +152,98 @@
             action="https://formsubmit.co/24f8838e97d365e0d5579157d4acf3f2"
             method="POST"
           >
-            <label>Nome completo</label>
-            <input type="text" name="nome_do_interessado" size="40" required />
+            <div class="fieldName">
+              <label>Nome completo</label>
+              <input
+                type="text"
+                name="nome_do_interessado"
+                size="40"
+                required
+              />
+            </div>
 
-            <label>E-mail</label>
-            <input
-              type="email"
-              name="email_do_interessado"
-              size="40"
-              required
-            />
+            <div class="fieldEmail">
+              <label>E-mail</label>
+              <input
+                type="email"
+                name="email_do_interessado"
+                size="40"
+                required
+              />
+            </div>
 
-            <label>CPF</label>
-            <input
-              type="text"
-              name="cpd_do_interessado"
-              size="40"
-              placeholder="Informe apenas os numeros"
-              required
-            />
+            <div class="fieldCpf">
+              <label>CPF</label>
+              <input
+                type="text"
+                name="cpd_do_interessado"
+                size="40"
+                placeholder="Informe apenas os numeros"
+                required
+              />
+            </div>
 
-            <label>Telefone (com DDD)*</label>
-            <input
-              type="text"
-              name="telefone_do_interessado"
-              size="40"
-              required
-            />
+            <div class="fieldContact">
+              <div>
+                <label>Telefone (com DDD)*</label>
+                <input
+                  type="text"
+                  name="telefone_do_interessado"
+                  size="40"
+                  required
+                />
+              </div>
 
-            <label>Celular (com DDD)*</label>
-            <input
-              type="text"
-              name="celular_do_interessado"
-              size="40"
-              required
-            />
+              <div>
+                <label>Celular (com DDD)*</label>
+                <input
+                  type="text"
+                  name="celular_do_interessado"
+                  size="40"
+                  required
+                />
+              </div>
+            </div>
 
-            <label>Endereço completo</label>
-            <input
-              type="text"
-              name="endereco_do_interessado"
-              size="40"
-              required
-            />
+            <div class="fieldAdress">
+              <label>Endereço completo</label>
+              <input
+                type="text"
+                name="endereco_do_interessado"
+                size="40"
+                required
+              />
+            </div>
 
-            <label>Condição que deseja realizar o pagamento</label>
-            <select name="condicao_pagamento" required>
-              <option value="Parcelado em 48x" selected>
-                Parcelado em 48x - ${value}
-              </option>
-              <option value="Parcelado em 60x">
-                Parcelado em 60x - ${value}
-              </option>
-              <option value="Parcelado em 72x">
-                Parcelado em 72x - ${value}
-              </option>
-              <option value="Pix">Pix - A vista</option>
-            </select>
+            <div class="selectPay">
+              <label>Condição que deseja realizar o pagamento</label>
+              <select name="condicao_pagamento" required>
+                <option value="Parcelado em 48x" selected>
+                  Parcelado em 48x - ${value}
+                </option>
+                <option value="Parcelado em 60x">
+                  Parcelado em 60x - ${value}
+                </option>
+                <option value="Parcelado em 72x">
+                  Parcelado em 72x - ${value}
+                </option>
+                <option value="Pix">Pix - A vista</option>
+              </select>
+            </div>
 
-            <label>
-              Escreva abaixo uma mensagem para o vendedor, caso tenha alguma
-              duvida relacionado ao veiculo
-            </label>
-            <textarea
-              name="duvidas_do_interessado"
-              rows="8"
-              cols="70"
-            ></textarea>
+            <div class="fieldTextForSelles">
+              <label>
+                Escreva abaixo uma mensagem para o vendedor, caso tenha alguma
+                duvida relacionado ao veiculo
+              </label>
+              <textarea
+                name="duvidas_do_interessado"
+                rows="8"
+                cols="70"
+              ></textarea>
+            </div>
 
-            <div>
+            <div class="fieldCheck">
               <input
                 type="checkbox"
                 name="aceite_do_contrato"
@@ -230,7 +254,7 @@
             </div>
 
             <input type="hidden" name="_template" value="box" />
-            <button type="submit">Enviar</button>
+            <button class="submitForm" type="submit">Enviar</button>
           </form>
         </section>
       </div>
