@@ -6,51 +6,36 @@
   display: block;
 }
 
-#form h2 {
+.sectionForm h2 {
   font-weight: 700;
   font-size: 2rem;
-  margin: 20px 0 5px 0;
+  margin: 0 0 5px 0;
 }
 
-#form p {
+.sectionForm p {
   color: #555;
   font-size: 0.875rem;
   margin: 0 0 15px 0;
 }
 
-form,
-label,
-input {
+.sectionForm form label {
   display: block;
-}
-
-.fieldName label,
-.fieldEmail label,
-.fieldCpf label,
-.fieldContact label,
-.fieldAdress label,
-.selectPay label,
-.fieldTextForSelles label {
   font-size: 1rem;
   color: #222;
   margin-bottom: 8px;
 }
 
-.fieldName input,
-.fieldEmail input,
-.fieldCpf input,
-.fieldContact input,
-.fieldAdress input {
+.sectionForm form input {
   padding: 5px;
   border-radius: 4px;
   border: 1px solid #222;
   outline: none;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .fieldContact {
   display: flex;
-  justify-content: space-between;
+  gap: 3%;
 }
 
 .selectPay select {
@@ -69,9 +54,14 @@ input {
   margin: 10px 0;
 }
 
+.fieldCheck input,
+.fieldCheck label {
+  margin-bottom: 0px !important;
+}
+
 .submitForm {
   border: none;
-  background: #66cd00;
+  background: #00d6a6;
   color: #f9f9f9;
   font-weight: 700;
   font-size: 1rem;

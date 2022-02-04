@@ -92,8 +92,37 @@
 }
 
 .home-desc {
-  max-width: 700px;
+  max-width: 800px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 25%;
+}
+
+.home-desc .msg {
+  max-width: 50%;
+}
+
+.home-desc .msg h2 {
+  color: #f3123c;
+  margin-bottom: 1rem;
+}
+
+.home-desc .msg p {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.home-desc .linkOpenForm span {
+  background-color: #00d6a6;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  padding: 16px;
 }
 
 .map {
