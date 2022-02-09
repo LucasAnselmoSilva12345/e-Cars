@@ -4,6 +4,7 @@
 
 #form.activeForm {
   display: block;
+  width: 75%;
 }
 
 .sectionForm h2 {
@@ -15,7 +16,13 @@
 .sectionForm p {
   color: #555;
   font-size: 0.875rem;
-  margin: 0 0 15px 0;
+}
+
+.groupField {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 25px 0;
 }
 
 .sectionForm form label {
@@ -33,18 +40,17 @@
   margin-bottom: 14px;
 }
 
-.fieldContact {
-  display: flex;
-  gap: 3%;
-}
-
 .selectPay select {
   background-color: transparent;
   color: #222;
-  padding: 5px;
   border-radius: 4px;
   outline: none;
-  margin-bottom: 12px;
+  padding: 15px;
+}
+
+.fieldTextForSelles textarea {
+  width: 100%;
+  height: 150px;
 }
 
 .fieldCheck {
@@ -68,4 +74,32 @@
   padding: 15px 50px;
   border-radius: 4px;
   margin-top: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  #form.activeForm {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .sectionForm h2 {
+    font-size: 1.75rem;
+    margin: 0 0 15px 0;
+  }
+
+  .sectionForm p {
+    font-size: 1rem;
+  }
+
+  .groupField {
+    display: flex;
+    flex-direction: column;
+
+    margin: 25px 0;
+  }
+
+  .sectionForm form label {
+    text-align: left;
+  }
 }

@@ -170,33 +170,52 @@
           action="https://formsubmit.co/24f8838e97d365e0d5579157d4acf3f2"
           method="POST"
         >
-          <div class="fieldName">
-            <label>Nome completo</label>
-            <input type="text" name="nome_do_interessado" size="40" required />
+          <div class="groupField">
+            <div class="fieldName">
+              <label>Nome completo</label>
+              <input
+                type="text"
+                name="nome_do_interessado"
+                size="40"
+                required
+              />
+            </div>
+
+            <div class="fieldEmail">
+              <label>E-mail</label>
+              <input
+                type="email"
+                name="email_do_interessado"
+                size="40"
+                required
+              />
+            </div>
           </div>
 
-          <div class="fieldEmail">
-            <label>E-mail</label>
-            <input
-              type="email"
-              name="email_do_interessado"
-              size="40"
-              required
-            />
+          <div class="groupField">
+            <div class="fieldCpf">
+              <label>CPF</label>
+              <input
+                type="text"
+                name="cpd_do_interessado"
+                size="40"
+                placeholder="Informe apenas os numeros"
+                required
+              />
+            </div>
+
+            <div class="fieldAdress">
+              <label>Endereço completo</label>
+              <input
+                type="text"
+                name="endereco_do_interessado"
+                size="40"
+                required
+              />
+            </div>
           </div>
 
-          <div class="fieldCpf">
-            <label>CPF</label>
-            <input
-              type="text"
-              name="cpd_do_interessado"
-              size="40"
-              placeholder="Informe apenas os numeros"
-              required
-            />
-          </div>
-
-          <div class="fieldContact">
+          <div class="groupField">
             <div>
               <label>Telefone (com DDD)*</label>
               <input
@@ -218,30 +237,37 @@
             </div>
           </div>
 
-          <div class="fieldAdress">
-            <label>Endereço completo</label>
-            <input
-              type="text"
-              name="endereco_do_interessado"
-              size="40"
-              required
-            />
-          </div>
-
-          <div class="selectPay">
-            <label>Condição que deseja realizar o pagamento</label>
-            <select name="condicao_pagamento" required>
-              <option value="Parcelado em 48x" selected>
-                Parcelado em 48x - ${value}
-              </option>
-              <option value="Parcelado em 60x">
-                Parcelado em 60x - ${value}
-              </option>
-              <option value="Parcelado em 72x">
-                Parcelado em 72x - ${value}
-              </option>
-              <option value="Pix">Pix - A vista</option>
-            </select>
+          <div class="groupField">
+            <div class="selectPay">
+              <label>Condição que deseja realizar o pagamento</label>
+              <select name="condicao_pagamento" required>
+                <option value="Parcelado em 48x" selected>
+                  Parcelado em 48x - ${value}
+                </option>
+                <option value="Parcelado em 60x">
+                  Parcelado em 60x - ${value}
+                </option>
+                <option value="Parcelado em 72x">
+                  Parcelado em 72x - ${value}
+                </option>
+                <option value="Pix">Pix - A vista</option>
+              </select>
+            </div>
+            <div class="selectPay">
+              <label>Condição que deseja realizar o pagamento</label>
+              <select name="condicao_pagamento" required>
+                <option value="Parcelado em 48x" selected>
+                  Parcelado em 48x - ${value}
+                </option>
+                <option value="Parcelado em 60x">
+                  Parcelado em 60x - ${value}
+                </option>
+                <option value="Parcelado em 72x">
+                  Parcelado em 72x - ${value}
+                </option>
+                <option value="Pix">Pix - A vista</option>
+              </select>
+            </div>
           </div>
 
           <div class="fieldTextForSelles">
@@ -249,11 +275,7 @@
               Escreva abaixo uma mensagem para o vendedor, caso tenha alguma
               duvida relacionado ao veiculo
             </label>
-            <textarea
-              name="duvidas_do_interessado"
-              rows="8"
-              cols="70"
-            ></textarea>
+            <textarea name="duvidas_do_interessado" rows="8"></textarea>
           </div>
 
           <div class="fieldCheck">

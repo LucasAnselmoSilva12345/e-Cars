@@ -91,6 +91,26 @@
   font-size: 1rem;
 }
 
+.map {
+  margin: 50px 0;
+}
+
+.map h4 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.map iframe {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.map strong {
+  display: block;
+  text-align: right;
+}
+
 .home-desc {
   max-width: 800px;
   margin-bottom: 50px;
@@ -125,26 +145,6 @@
   padding: 16px;
 }
 
-.map {
-  margin: 50px 0;
-}
-
-.map h4 {
-  font-size: 1.625rem;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-.map iframe {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.map strong {
-  display: block;
-  text-align: right;
-}
-
 @media only screen and (max-width: 700px) {
   .product-details {
     margin-top: 150px;
@@ -166,9 +166,6 @@
   .details-list li {
     margin: 0;
   }
-  .home-desc {
-    text-align: center;
-  }
   .map {
     text-align: center;
   }
@@ -178,5 +175,12 @@
   .map strong {
     display: block;
     text-align: center;
+  }
+  .home-desc {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-desc .msg {
+    margin-bottom: 55px;
   }
 }
