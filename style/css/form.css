@@ -5,6 +5,10 @@
 #form.activeForm {
   display: block;
   width: 75%;
+
+  padding: 10px;
+
+  box-shadow: 2px 2px 2px 2px #c9c9c9;
 }
 
 .sectionForm h2 {
@@ -40,8 +44,13 @@
   margin-bottom: 14px;
 }
 
+.groupField input {
+  width: 100%;
+}
+
 .selectPay select {
   background-color: transparent;
+  width: 100%;
   color: #222;
   border-radius: 4px;
   outline: none;
