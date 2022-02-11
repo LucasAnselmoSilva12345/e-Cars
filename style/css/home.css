@@ -140,7 +140,6 @@ nav {
   flex: 1;
 }
 
-/* -----Exclusives------- */
 .sub-title {
   margin: 3.125rem 0 1.25rem;
   font-size: 2.2rem;
@@ -179,7 +178,6 @@ nav {
   color: #fff;
 }
 
-/* --------Trending places----------- */
 .trending {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
@@ -198,7 +196,6 @@ nav {
   color: #333;
 }
 
-/* --------------Call to action-----------  */
 .cta {
   margin: 5rem 0;
   background-image: linear-gradient(to right, #3f2321, transparent),
@@ -240,7 +237,6 @@ nav {
   filter: brightness(80%);
 }
 
-/* ------------Most Sought After ------------- */
 .mostSoughtAfter {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
@@ -284,8 +280,6 @@ nav {
   filter: brightness(70%);
 }
 
-/* About e-Cars */
-
 .about-msg {
   text-align: center;
   margin: 5rem 0;
@@ -299,7 +293,6 @@ nav {
   font-weight: 500;
 }
 
-/* ---------- Footer ---------*/
 .footer {
   text-align: center;
 }
@@ -336,7 +329,6 @@ nav {
   color: #333;
 }
 
-/* Responsive */
 @media only screen and (max-width: 43.75rem) {
   .content-header h1 {
     padding-top: 12.5rem;

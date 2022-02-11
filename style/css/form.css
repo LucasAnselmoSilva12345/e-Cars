@@ -88,7 +88,6 @@
 @media only screen and (max-width: 43.75rem) {
   #form.activeForm {
     width: 100%;
-
     text-align: center;
   }
 
@@ -104,7 +103,6 @@
   .groupField {
     display: flex;
     flex-direction: column;
-
     margin: 1.5625rem 0;
   }
 
