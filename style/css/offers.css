@@ -1,6 +1,6 @@
 .navbar-white {
   background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.05);
 }
 
 .navbar-white .nav-links li a {
@@ -12,7 +12,7 @@
 }
 
 .list-container {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -25,15 +25,15 @@
 .left-col h1 {
   color: #333;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .car {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px 0;
-  border-top: 1px solid #ccc;
+  padding: 1.875rem 0;
+  border-top: 0.0625rem solid #ccc;
 }
 
 .car-img {
@@ -42,7 +42,7 @@
 
 .car-img img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .car-info {
@@ -53,8 +53,8 @@
 .car-info h3 {
   font-weight: 700;
   color: #333;
-  font-size: 22px;
-  margin: 4px 0;
+  font-size: 1.375rem;
+  margin: 0.25rem 0;
 }
 
 .car-info span {
@@ -67,7 +67,7 @@
 }
 
 .car-price h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -77,13 +77,13 @@
 }
 
 .car-buy {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .car-buy a {
   background-color: #f3123c;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 0.5rem;
   color: #fff;
   font-weight: 700;
 
@@ -99,9 +99,9 @@
 }
 
 .sidebar {
-  border: 1px solid #999;
-  padding: 20px 30px;
-  margin-top: 30px;
+  border: 0.0625rem solid #999;
+  padding: 1.25rem 1.875rem;
+  margin-top: 1.875rem;
 }
 
 .sidebar h2 {
@@ -110,14 +110,14 @@
 
 .sidebar h3 {
   font-weight: 300;
-  margin: 20px 0 10px;
+  margin: 1.25rem 0 0.625rem;
 }
 
 .filter {
   display: flex;
   align-items: center;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .filter p {
@@ -125,33 +125,33 @@
 }
 
 .filter input {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
   cursor: pointer;
 }
 
 .sidebar-link {
   text-align: right;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .pagination i {
-  width: 15px;
-  margin: 10px 20px;
+  width: 0.9375rem;
+  margin: 0.625rem 1.25rem;
   color: #333;
 }
 
 .pagination span {
-  margin: 10px 8px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  margin: 0.625rem 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
@@ -162,7 +162,7 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   .navbar-white .gg-menu {
     color: #000;
   }
@@ -172,7 +172,7 @@
   }
 
   .list-container {
-    margin-top: 150px;
+    margin-top: 9.375rem;
   }
 
   .left-col,
@@ -183,14 +183,14 @@
   }
 
   .left-col h1 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .pagination span {
-    margin: 10px 2px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
+    margin: 0.625rem 0.125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    font-size: 0.75rem;
   }
 }

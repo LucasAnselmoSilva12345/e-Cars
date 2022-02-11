@@ -1,9 +1,9 @@
 .product-details {
-  padding: 0 170px;
+  padding: 0 10.625rem;
 }
 
 .product-title {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .product-title h1 {
@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 .product-title span {
@@ -28,13 +28,13 @@
 
 .gallery {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0.625rem;
   grid-template-areas: 'main main . .' 'main main . .';
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .gallery div img {
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .gallery-img-main {
@@ -59,51 +59,51 @@
 
 .line {
   border: 0;
-  height: 1px;
+  height: 0.0625rem;
   background: #ccc;
   width: 100%;
-  max-width: 800px;
-  margin: 20px 0 50px;
+  max-width: 50rem;
+  margin: 1.25rem 0 3.125rem;
 }
 
 /* form */
 
 .details-list {
-  margin: 50px 0;
+  margin: 3.125rem 0;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .details-list li {
-  margin: 0 25px;
+  margin: 0 1.5625rem;
   font-size: 1.125rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #333;
 }
 
 .details-list li span {
   color: #555;
   display: block;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
   font-weight: 400;
   font-size: 1rem;
 }
 
 .map {
-  margin: 50px 0;
+  margin: 3.125rem 0;
 }
 
 .map h4 {
   font-size: 1.625rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .map iframe {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .map strong {
@@ -112,8 +112,8 @@
 }
 
 .home-desc {
-  max-width: 800px;
-  margin-bottom: 50px;
+  max-width: 50rem;
+  margin-bottom: 3.125rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -137,27 +137,27 @@
 .home-desc .linkOpenForm span {
   background-color: #00d6a6;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
 
-  padding: 16px;
+  padding: 1rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   .product-details {
-    margin-top: 150px;
+    margin-top: 9.375rem;
   }
   .row p {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
   .gallery {
     grid-template-areas: 'main main' '. .' '. .';
   }
   .small-details h3 {
-    font-size: 20px;
-    margin-top: 24px;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
   }
   .details-list {
     grid-template-columns: 1fr;
@@ -181,6 +181,6 @@
     text-align: center;
   }
   .home-desc .msg {
-    margin-bottom: 55px;
+    margin-bottom: 3.4375rem;
   }
 }
