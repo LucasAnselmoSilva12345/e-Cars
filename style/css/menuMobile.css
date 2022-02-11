@@ -4,7 +4,7 @@ nav .gg-menu {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   .logo {
     position: fixed;
     top: 4%;
@@ -17,19 +17,19 @@ nav .gg-menu {
     z-index: 100;
     display: inline-block;
     width: 100%;
-    padding: 100px 7% 0;
+    padding: 6.25rem 7% 0;
     background: #000;
     text-align: right;
-    max-height: 100px;
+    max-height: 6.25rem;
     overflow: hidden;
     transition: max-height 0.5s;
   }
   nav .nav-links li {
-    margin: 10px 0;
+    margin: 0.625rem 0;
     display: block;
   }
   .register-btn {
-    margin: 15px 0 30px;
+    margin: 0.9375rem 0 1.875rem;
     justify-content: flex-end;
   }
   nav .gg-menu {
@@ -38,9 +38,9 @@ nav .gg-menu {
     top: 10%;
     right: 7%;
     color: #fff;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   .hidemenu {
-    max-height: 300px;
+    max-height: 18.75rem;
   }
 }

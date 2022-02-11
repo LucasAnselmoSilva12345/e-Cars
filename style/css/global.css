@@ -35,7 +35,7 @@ img {
 }
 
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 0.5rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -44,5 +44,5 @@ img {
 
 *::-webkit-scrollbar-thumb {
   background-color: #999;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
