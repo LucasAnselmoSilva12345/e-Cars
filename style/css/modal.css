@@ -87,7 +87,6 @@
   z-index: 0;
   border-radius: 0.3125rem;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
   background: -webkit-linear-gradient(left, #023059, #084f8c);
 }
 
@@ -168,8 +167,25 @@ form .field input[type='submit'] {
   cursor: pointer;
 }
 
-form .other-logins {
+form .btnLoginForGoogle {
+  background-color: #f2360c;
+  color: #fff;
+  height: 3.125rem;
+  width: 100%;
+  margin-top: 1.25rem;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  outline: none;
+  padding-left: 0.9375rem;
+  font-size: 1.0625rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+form .btnLoginForGoogle:hover {
+  background-color: #db4a39;
 }
