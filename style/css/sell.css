@@ -1,0 +1,19 @@
+.containerContent {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 5.625rem 0;
+
+  text-align: center;
+}
+
+.titleContent h2 {
+  font-size: 1.625rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mainContent p {
+  font-size: 1.125rem;
+  color: #555;
+  text-align: justify;
+}

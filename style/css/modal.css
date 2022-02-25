@@ -139,6 +139,9 @@ input[type='radio'] {
 }
 
 .form-inner form .pass-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 0.3125rem;
 }
 
@@ -157,17 +160,32 @@ input[type='radio'] {
   text-decoration: underline;
 }
 
-form .field input[type='submit'] {
+form .btnRegisterToEmail,
+form .btnLoginToEmail {
   background: -webkit-linear-gradient(left, #023059, #084f8c);
   color: #fff;
-  font-size: 1.25rem;
-  font-weight: 500;
-  padding-left: 0rem;
+  height: 3.125rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  outline: none;
+  padding-left: 0.9375rem;
+  font-size: 1.0625rem;
   border: none;
+  border-radius: 0.3125rem;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-form .btnLoginForGoogle {
+form .btnRegisterToEmail:hover,
+form .btnSubmitSignin:hover {
+  filter: opacity(0.9);
+}
+
+form .btnLoginToGoogle {
   background-color: #f2360c;
   color: #fff;
   height: 3.125rem;
@@ -186,6 +204,29 @@ form .btnLoginForGoogle {
   transition: all 0.4s ease;
 }
 
-form .btnLoginForGoogle:hover {
+form .btnLoginToGoogle:hover {
   background-color: #db4a39;
+}
+
+form .btnLoginToFacebook {
+  background-color: #3b5998;
+  color: #fff;
+  height: 3.125rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  outline: none;
+  padding-left: 0.9375rem;
+  font-size: 1.0625rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+form .btnLoginToFacebook:hover {
+  filter: opacity(0.9);
 }

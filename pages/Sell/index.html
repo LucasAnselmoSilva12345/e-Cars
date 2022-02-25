@@ -30,70 +30,89 @@
       <i class="gg-menu"></i>
     </nav>
 
+    <div class="containerContent">
+      <div class="titleContent">
+        <h2></h2>
+      </div>
+      <div class="mainContent">
+        <p></p>
+      </div>
+    </div>
+
     <section class="modal-container" data-modal="container">
       <div class="wrapper">
         <i class="gg-close-r" data-modal="close"></i>
         <div class="title-text">
-          <div class="title login">Login Form</div>
-          <div class="title signup">SignUp Form</div>
+          <div class="title login">Faça seu login</div>
+          <div class="title signup">Faça seu cadastro</div>
         </div>
         <div class="form-container">
           <div class="slide-controls">
             <input type="radio" name="slider" id="login" checked />
             <input type="radio" name="slider" id="signup" />
             <label for="login" class="slide login">Login</label>
-            <label for="signup" class="slide signup">Signup</label>
+            <label for="signup" class="slide signup">Cadastro</label>
             <div class="slide-tab"></div>
           </div>
           <div class="form-inner">
-            <form action="" class="login">
+            <form id="signin-form" class="login">
               <div class="field">
-                <input type="text" placeholder="Informe seu email" required />
+                <input
+                  type="email"
+                  id="signin-email"
+                  placeholder="Digite seu e-mail"
+                  required
+                />
               </div>
               <div class="field">
                 <input
                   type="password"
-                  placeholder="Informe sua senha"
+                  id="signin-password"
+                  placeholder="Digite seu senha"
                   required
                 />
               </div>
-              <div class="pass-link"><a href="#">Forgot password?</a></div>
-              <div class="field">
-                <input type="submit" value="Login" />
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+                <a href="#" id="logout">Logout</a>
               </div>
-              <button class="btnLoginForGoogle">
+              <button type="submit" class="btnLoginToEmail">
+                Realizar Login <i class="gg-log-in"></i>
+              </button>
+              <button class="btnLoginToGoogle">
                 <i class="gg-google"></i>
                 Faça Login com a Google
+              </button>
+              <button class="btnLoginToFacebook">
+                <i class="gg-facebook"></i>
+                Faça Login com o Facebook
               </button>
               <div class="signup-link">
                 Not a member? <a href="#">Signup now</a>
               </div>
             </form>
-            <form action="" class="signup">
-              <div class="field">
-                <input type="text" placeholder="Username" required />
-              </div>
-              <div class="field">
-                <input type="text" placeholder="Seu melhor email" required />
-              </div>
+            <form id="signup-form" class="signup">
               <div class="field">
                 <input
-                  type="password"
-                  placeholder="Informe sua senha"
+                  type="email"
+                  id="signup-email"
+                  placeholder="Digite seu e-mail"
                   required
                 />
               </div>
               <div class="field">
                 <input
                   type="password"
-                  placeholder="Confirme sua senha"
+                  id="signup-password"
+                  placeholder="Digite sua senha"
                   required
                 />
               </div>
-              <div class="field">
-                <input type="submit" value="Signup" />
-              </div>
-              <button class="btnLoginForGoogle">
+              <button type="submit" class="btnRegisterToEmail">
+                Realizar cadastro
+                <i class="gg-chevron-right-o"></i>
+              </button>
+              <button class="btnLoginToGoogle">
                 <i class="gg-google"></i>
                 Faça Login com a Google
               </button>
@@ -103,6 +122,7 @@
       </div>
     </section>
 
+    <script type="module" src="/js/loginFirebase.js"></script>
     <script src="/main.js"></script>
   </body>
 </html>
