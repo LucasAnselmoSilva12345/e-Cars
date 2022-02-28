@@ -279,7 +279,7 @@
       </footer>
     </div>
 
-    <section class="modal-container activeModal" data-modal="container">
+    <section class="modal-container" data-modal="container">
       <div class="wrapper">
         <i class="gg-close-r" data-modal="close"></i>
         <div class="title-text">
@@ -319,11 +319,11 @@
               <button type="submit" class="btnLoginToEmail">
                 Realizar Login <i class="gg-log-in"></i>
               </button>
-              <button class="btnLoginToGoogle">
+              <button class="btnLoginToGoogle" id="btnLoginToGoogle">
                 <i class="gg-google"></i>
                 Faça Login com a Google
               </button>
-              <button class="btnLoginToFacebook">
+              <button class="btnLoginToFacebook" id="btnLoginToFacebook">
                 <i class="gg-facebook"></i>
                 Faça Login com o Facebook
               </button>
@@ -352,16 +352,13 @@
                 Realizar cadastro
                 <i class="gg-chevron-right-o"></i>
               </button>
-              <button class="btnLoginToGoogle">
-                <i class="gg-google"></i>
-                Faça Login com a Google
-              </button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <script type="module" src="js/loginFirebase.js"></script>
+
+    <script type="module" src="/js/loginFirebase.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
