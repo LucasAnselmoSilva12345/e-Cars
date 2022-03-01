@@ -1,19 +1,264 @@
-.containerContent {
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 5.625rem 0;
+/* main {
+  display: none;
+}
 
+main.activeMain {
+  display: block;
+} */
+
+.mainContainer {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainContainerText {
+  max-width: 35rem;
+  margin-bottom: 5.625rem;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainContainerText h1 {
+  font-size: 3.375rem;
+  color: #333;
+}
+
+.mainContainerText p {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-top: 1.5rem;
+  color: #555;
+}
+
+.mainContainerText a {
+  width: 100%;
+  max-width: 22.5rem;
+  height: 4.5rem;
+
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  margin-top: 2.5rem;
+
+  background: darkgreen;
+
+  transition: 900ms;
+}
+
+.mainContainerText a i {
+  color: #fff;
+}
+
+.mainContainerText a strong {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.mainContainerImg {
+  width: 50vw;
+}
+
+.titleMainContainer {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.mainContainerPlans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+.mainContainerPlans div {
+  background-color: #fff;
+  box-shadow: rgb(203 203 203 / 50%) 0px 10px 10px;
+  border-radius: 0.5rem;
+  width: 13.125rem;
+  height: 18.75rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainerPlans div h4 {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #555;
   text-align: center;
 }
 
-.titleContent h2 {
-  font-size: 1.625rem;
-  color: #333;
-  margin-bottom: 1rem;
+.mainContainerPlans div span {
+  color: #ff5361;
+  font-size: 2rem;
 }
 
-.mainContent p {
+.mainContainerPlans div h3 {
+  color: #222;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.mainSidebar {
+  background: #434c5e;
+}
+
+.mainSidebar .mainSidebarContent {
+  max-width: 75rem;
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainSidebar .mainSidebarContent h3 {
+  font-size: 2.625rem;
+}
+
+.mainSidebar .mainSidebarContent p {
+  font-size: 1rem;
+}
+
+.mainSidebar .mainSidebarContent a {
+  width: 25vw;
+  height: 8vh;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #37b24d;
+  color: #f1f1f1;
+  transition: 900ms;
+}
+
+.mainContainerBenefits {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100vw;
+  height: 70vh;
+}
+
+.mainContainerBenefits h2 {
+  text-align: center;
+  margin: 3.125rem 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.containerBenefits {
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerBenefits div {
+  text-align: center;
+  flex: 1;
+}
+
+.containerBenefits div img {
+  margin: 1.25rem auto;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.containerBenefits div h3 {
+  margin: 1.25rem auto;
+  font-size: 1.25rem;
+  color: #f3123c;
+}
+
+.containerBenefits div p {
+  color: #3b4252;
+}
+
+.mainContainerQuestions {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100vw;
+  height: 70vh;
+
+  margin-bottom: 6.25rem;
+}
+
+.mainContainerQuestions h2 {
+  text-align: center;
+
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.mainContainerQuestions .questions {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.questions dt {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f3123c;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions dd {
   font-size: 1.125rem;
-  color: #555;
-  text-align: justify;
+  margin-bottom: 0.5rem;
+  margin-left: 1.875rem;
+  color: #3b4252;
+}
+
+[data-anime='accordion'] dd {
+  display: none;
+}
+
+[data-anime='accordion'] dt::after {
+  content: '+';
+}
+
+[data-anime='accordion'] dt.activeAccordionList::after {
+  content: '-';
+}
+
+[data-anime='accordion'] dd.activeAccordionList {
+  display: block;
+  animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
 }

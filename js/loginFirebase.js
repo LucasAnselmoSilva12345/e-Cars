@@ -126,22 +126,23 @@ btnLoginToFacebook.addEventListener('click', () => {
 });
 
 // verificar autenticação
-const titleContent = document.querySelector('.titleContent h2');
-const mainContent = document.querySelector('.mainContent');
+// const titleContent = document.querySelector('.titleContent h2');
+// const mainContent = document.querySelector('.mainContent');
+// const main = document.querySelector('.main');
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
     const db = getFirestore();
 
     onSnapshot(doc(db, 'sales', 'S9INqtZ0OwHD35SkvT8d'), (doc) => {
-      titleContent.innerHTML = doc.data().title;
-      mainContent.innerHTML = doc.data().description;
-
+      // titleContent.innerHTML = doc.data().title;
+      // mainContent.innerHTML = doc.data().description;
+      // main.classList.toggle('activeMain');
       // adicionar class de display block para aparecer opções de venda
     });
   } else {
-    titleContent.innerHTML = 'Um momento meu caro vendendor';
-    mainContent.innerHTML =
-      'Para realizar uma venda em nosso site, é necessario fazer sua autenticação primeiro';
+    // titleContent.innerHTML = 'Um momento meu caro vendendor';
+    // mainContent.innerHTML =
+    //   'Para realizar uma venda em nosso site, é necessario fazer sua autenticação primeiro';
   }
 });
