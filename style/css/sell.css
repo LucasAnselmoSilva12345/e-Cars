@@ -1,13 +1,5 @@
-/* main {
-  display: none;
-}
-
-main.activeMain {
-  display: block;
-} */
-
 .mainContainer {
-  max-width: 75rem;
+  max-width: 68.75rem;
   margin: 0 auto;
   width: 100vw;
   height: 90vh;
@@ -27,7 +19,7 @@ main.activeMain {
 }
 
 .mainContainerText h1 {
-  font-size: 3.375rem;
+  font-size: 3.125rem;
   color: #333;
 }
 
@@ -67,13 +59,64 @@ main.activeMain {
 }
 
 .mainContainerImg {
-  width: 50vw;
+  width: 40vw;
+}
+
+@media only screen and (max-width: 50rem) {
+  .mainContainer {
+    max-width: 43.75rem;
+    margin: 6.25rem auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mainContainerText h1 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  .mainContainerText p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .mainContainerText a {
+    max-width: 18.75rem;
+    height: 4.0625rem;
+
+    margin: 2.5rem auto 0 auto;
+  }
+
+  .mainContainerText a i {
+    color: #fff;
+  }
+
+  .mainContainerText a strong {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .mainContainerImg {
+    width: 30vw;
+  }
 }
 
 .titleMainContainer {
+  margin: 3.125rem 0;
   font-size: 2.5rem;
   text-align: center;
   color: #333;
+}
+
+@media only screen and (max-width: 50rem) {
+  .titleMainContainer {
+    margin: 3.125rem 0;
+    font-size: 2rem;
+  }
 }
 
 .mainContainerPlans {
@@ -115,6 +158,18 @@ main.activeMain {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 50rem) {
+  .mainContainerPlans {
+    flex-direction: column;
+    height: 50vh;
+    margin: 9.375rem 0;
+  }
+
+  .mainContainerPlans div {
+    padding: 1.375rem;
+  }
+}
+
 .mainSidebar {
   background: #434c5e;
 }
@@ -151,18 +206,42 @@ main.activeMain {
   transition: 900ms;
 }
 
+@media only screen and (max-width: 50rem) {
+  .mainSidebar .mainSidebarContent {
+    max-width: 50rem;
+    margin: 7.8125rem auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mainSidebar .mainSidebarContent h3 {
+    font-size: 1.875rem;
+  }
+
+  .mainSidebar .mainSidebarContent p {
+    font-size: 1rem;
+  }
+
+  .mainSidebar .mainSidebarContent a {
+    font-size: 0.875rem;
+    margin-top: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 31.25rem) {
+  .mainSidebar .mainSidebarContent a {
+    width: 60%;
+    font-size: 0.875rem;
+    margin-top: 1.25rem;
+  }
+}
+
 .mainContainerBenefits {
   max-width: 75rem;
   margin: 0 auto;
   width: 100vw;
   height: 70vh;
-}
-
-.mainContainerBenefits h2 {
-  text-align: center;
-  margin: 3.125rem 0;
-  font-size: 2.5rem;
-  color: #333;
 }
 
 .containerBenefits {
@@ -193,26 +272,41 @@ main.activeMain {
   color: #3b4252;
 }
 
-.mainContainerQuestions {
-  max-width: 75rem;
-  margin: 0 auto;
-  width: 100vw;
-  height: 70vh;
+@media only screen and (max-width: 50rem) {
+  .mainContainerBenefits {
+    max-width: 50rem;
+    height: 140vh;
+  }
 
-  margin-bottom: 6.25rem;
+  .containerBenefits {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.mainContainerQuestions h2 {
-  text-align: center;
+@media only screen and (max-width: 31.25rem) {
+  .mainContainerBenefits {
+    max-width: 50rem;
+    height: 160vh;
+  }
 
-  font-size: 2.5rem;
-  color: #333;
+  .containerBenefits {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.mainContainerQuestions {
+  max-width: 75rem;
+  margin: 0 auto 3.125rem auto;
+  width: 100vw;
+  height: 80vh;
 }
 
 .mainContainerQuestions .questions {
   max-width: 70rem;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
 }
 
 .questions dt {
@@ -260,5 +354,44 @@ main.activeMain {
   to {
     max-height: 200px;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  .mainContainerQuestions {
+    max-width: 50rem;
+    margin: 0 auto 6.25rem auto;
+    height: 90vh;
+  }
+
+  .mainContainerQuestions .questions {
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 31.25rem) {
+  .mainContainerQuestions {
+    max-width: 31.25rem;
+    margin: 9.375rem auto;
+    height: 150vh;
+  }
+
+  .mainContainerQuestions .questions {
+    max-width: 31.25rem;
+    margin: 0 auto;
+    padding: 1.25rem 2.5rem;
+  }
+
+  .questions dt {
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .questions dd {
+    font-size: 1rem;
+    margin-bottom: 4.5rem;
+    margin-left: 1.875rem;
   }
 }
