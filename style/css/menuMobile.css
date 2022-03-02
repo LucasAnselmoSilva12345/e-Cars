@@ -4,7 +4,7 @@ nav .gg-menu {
   display: none;
 }
 
-@media only screen and (max-width: 43.75rem) {
+@media only screen and (max-width: 50rem) {
   .logo {
     position: fixed;
     top: 4%;
@@ -37,7 +37,7 @@ nav .gg-menu {
     position: fixed;
     top: 10%;
     right: 7%;
-    color: #fff;
+    color: #5e81ac;
     font-size: 1.75rem;
   }
   .hidemenu {
