@@ -98,6 +98,69 @@
   flex-basis: 25%;
 }
 
+@media only screen and (max-width: 50rem) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .list-container {
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .left-col {
+    flex-basis: 100%;
+  }
+
+  .left-col p {
+    margin: 5rem 0 auto 5rem;
+  }
+
+  .left-col h1 {
+    margin: 1.25rem 0 auto 5rem;
+    font-size: 1.375rem;
+  }
+
+  .car {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .car-img {
+    flex-basis: 0;
+  }
+
+  .car-img img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0.75rem;
+  }
+
+  .car-info {
+    flex-basis: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .car-price {
+    text-align: left;
+  }
+
+  .car-buy a {
+    width: 100%;
+  }
+
+  .right-col {
+    flex-basis: 100%;
+  }
+}
+
 .sidebar {
   border: 0.0625rem solid #999;
   padding: 1.25rem 1.875rem;
@@ -160,37 +223,4 @@
 .pagination .current {
   background: #333;
   color: #fff;
-}
-
-@media only screen and (max-width: 43.75rem) {
-  .navbar-white .gg-menu {
-    color: #000;
-  }
-  .navbar-white .register-btn {
-    background: transparent;
-    color: #000;
-  }
-
-  .list-container {
-    margin-top: 9.375rem;
-  }
-
-  .left-col,
-  .right-col,
-  .car-img,
-  .car-info {
-    flex-basis: 100%;
-  }
-
-  .left-col h1 {
-    font-size: 1.375rem;
-  }
-
-  .pagination span {
-    margin: 0.625rem 0.125rem;
-    width: 1.875rem;
-    height: 1.875rem;
-    line-height: 1.875rem;
-    font-size: 0.75rem;
-  }
 }

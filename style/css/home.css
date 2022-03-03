@@ -100,6 +100,7 @@ nav {
 }
 
 .search-bar form {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,9 +110,11 @@ nav {
 .search-bar form label {
   font-weight: 500;
   font-size: 1.125rem;
+  width: 100%;
 }
 
 .search-bar form input {
+  width: 100%;
   display: flex;
   border: 0;
   outline: none;
@@ -329,11 +332,19 @@ nav {
   color: #333;
 }
 
-@media only screen and (max-width: 43.75rem) {
-  .content-header h1 {
-    padding-top: 12.5rem;
-    font-size: 2.25rem;
+@media only screen and (max-width: 50rem) {
+  .content-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
+  .content-header h1 {
+    padding-top: 8.75rem;
+    font-size: 2.625rem;
+  }
+}
+
+@media only screen and (max-width: 43.75rem) {
   .search-bar {
     width: 90%;
     margin: 1.875rem auto;
@@ -359,6 +370,7 @@ nav {
   }
   .sub-title {
     font-size: 1.5rem;
+    text-align: center;
   }
   .cta {
     padding: 15% 5%;
@@ -381,5 +393,13 @@ nav {
   }
   .about-msg {
     font-size: 0.9375rem;
+  }
+}
+
+@media only screen and (max-width: 31.25rem) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
