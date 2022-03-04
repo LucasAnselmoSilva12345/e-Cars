@@ -2,7 +2,7 @@ import { outsideClick } from './outsideClick.js';
 
 export function initMenuMobile() {
   const menuList = document.querySelector('[data-menu="list"]');
-  const eventos = ['click', 'touchstart'];
+  const eventos = ['click'];
 
   function openMenu() {
     menuList.classList.toggle('hidemenu');

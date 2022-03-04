@@ -147,40 +147,74 @@
 
 @media only screen and (max-width: 50rem) {
   .product-details {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
     margin-top: 9.375rem;
   }
+
+  .product-title .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .row p {
     margin-top: 0.625rem;
   }
+
   .gallery {
-    grid-template-areas: 'main main' '. .' '. .';
+    grid-template-areas: 'main';
   }
+
+  .gallery div img {
+    width: 80%;
+  }
+
   .small-details h3 {
-    font-size: 1.25rem;
-    margin-top: 1.5rem;
+    width: 70%;
   }
+
+  .small-details p {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .line {
+    width: 100%;
+    max-width: 43.75rem;
+    margin: 1.25rem 0 3.125rem;
+  }
+
   .details-list {
     grid-template-columns: 1fr;
     text-align: center;
+    width: 70%;
   }
+
   .details-list li {
-    margin: 0;
+    margin: 0 auto;
   }
+
   .map {
-    text-align: center;
+    text-align: left;
   }
+
   .map iframe {
     display: none;
   }
+
   .map strong {
     display: block;
-    text-align: center;
+    text-align: left;
   }
+
   .home-desc {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
+
   .home-desc .msg {
+    max-width: 50%;
     margin-bottom: 3.4375rem;
   }
 }
