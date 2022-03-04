@@ -145,7 +145,7 @@
   padding: 1rem;
 }
 
-@media only screen and (max-width: 43.75rem) {
+@media only screen and (max-width: 50rem) {
   .product-details {
     margin-top: 9.375rem;
   }
