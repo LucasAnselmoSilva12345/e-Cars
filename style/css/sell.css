@@ -129,7 +129,7 @@
 
 .mainContainerPlans div {
   background-color: #fff;
-  box-shadow: rgb(203 203 203 / 50%) 0px 10px 10px;
+  box-shadow: rgb(203 203 203 / 50%) 0rem 0.625rem 0.625rem;
   border-radius: 0.5rem;
   width: 13.125rem;
   height: 18.75rem;
@@ -352,7 +352,7 @@
     max-height: 0;
   }
   to {
-    max-height: 200px;
+    max-height: 12.5rem;
     opacity: 1;
   }
 }

@@ -16,7 +16,7 @@
   color: #576975;
   font-size: 3rem;
   letter-spacing: 0.0625rem;
-  margin: 0px;
+  margin: 0rem;
 }
 
 .s-heading p {
@@ -38,10 +38,10 @@
   height: 0.375rem;
   position: absolute;
   left: 50%;
-  top: 0px;
+  top: 0rem;
   transform: translateX(-50%);
   background-color: #4a90e2;
-  border-radius: 0px 0px 0.625rem 0.625rem;
+  border-radius: 0rem 0rem 0.625rem 0.625rem;
   display: none;
   animation: bar 0.5s;
 }
@@ -65,7 +65,7 @@
 
 @keyframes bar {
   0% {
-    width: 0px;
+    width: 0rem;
   }
   100% {
     width: 6.25rem;
@@ -103,7 +103,7 @@
 
 .s-btn:hover {
   background-color: #4a90e2;
-  border: 1px solid #4a90e2;
+  border: 0.0625rem solid #4a90e2;
   color: #fff;
   transition: all ease 0.3s;
 }
@@ -190,13 +190,13 @@
   font-weight: 600;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75rem) {
   .containerServices {
     height: 100vh;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   .row {
     margin-bottom: 1.875rem;
   }
