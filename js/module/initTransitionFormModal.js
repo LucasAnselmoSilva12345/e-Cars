@@ -1,20 +1,26 @@
-export function initTransitionFormModal() {
-  const loginForm = document.querySelector('form.login');
-  const loginBtn = document.querySelector('label.login');
-  const signupBtn = document.querySelector('label.signup');
-  const signupLink = document.querySelector('.signup-link a');
-  const loginText = document.querySelector('.title-text .login');
+export default class TransitionFormModal {
+  constructor(loginForm, loginBtn, signupBtn, signupLink, loginText) {
+    this.loginForm = document.querySelector(loginForm);
+    this.loginBtn = document.querySelector(loginBtn);
+    this.signupBtn = document.querySelector(signupBtn);
+    this.signupLink = document.querySelector(signupLink);
+    this.loginText = document.querySelector(loginText);
+  }
 
-  signupBtn.addEventListener('click', () => {
-    loginForm.style.marginLeft = '-50%';
-    loginText.style.marginLeft = '-50%';
-  });
-  loginBtn.addEventListener('click', () => {
-    loginForm.style.marginLeft = '0%';
-    loginText.style.marginLeft = '0%';
-  });
-  signupLink.addEventListener('click', () => {
-    signupBtn.click();
-    return false;
-  });
+  init() {
+    this.signupBtn.addEventListener('click', () => {
+      this.loginForm.style.marginLeft = '-50%';
+      this.loginText.style.marginLeft = '-50%';
+    });
+
+    this.loginBtn.addEventListener('click', () => {
+      this.loginForm.style.marginLeft = '0%';
+      this.loginText.style.marginLeft = '0%';
+    });
+
+    this.signupLink.addEventListener('click', () => {
+      this.signupBtn.click();
+      return false;
+    });
+  }
 }

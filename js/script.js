@@ -1,6 +1,6 @@
 import MenuMobile from './module/initMenuMobile.js';
 import Modal from './module/initModal.js';
-import { initTransitionFormModal } from './module/initTransitionFormModal.js';
+import TransitionFormModal from './module/initTransitionFormModal.js';
 import Tooltip from './module/initTooltip.js';
 import openSectionForm from './module/initOpenForm.js';
 import AccordionList from './module/initAccordionList';
@@ -15,7 +15,14 @@ const initModal = new Modal(
 );
 initModal.init();
 
-initTransitionFormModal();
+const initTransitionFormModal = new TransitionFormModal(
+  'form.login',
+  'label.login',
+  'label.signup',
+  '.signup-link a',
+  '.title-text .login'
+);
+initTransitionFormModal.init();
 
 const initTooltip = new Tooltip('[data-tooltip]');
 initTooltip.init();
