@@ -1,8 +1,8 @@
 import MenuMobile from './module/initMenuMobile.js';
 import Modal from './module/initModal.js';
 import { initTransitionFormModal } from './module/initTransitionFormModal.js';
-import { initTooltip } from './module/initTooltip.js';
-import { initOpenModal } from './module/initOpenForm.js';
+import Tooltip from './module/initTooltip.js';
+import openSectionForm from './module/initOpenForm.js';
 import AccordionList from './module/initAccordionList';
 
 const initMenuMobile = new MenuMobile('[data-menu="list"]');
@@ -16,8 +16,15 @@ const initModal = new Modal(
 initModal.init();
 
 initTransitionFormModal();
-initTooltip();
-initOpenModal();
+
+const initTooltip = new Tooltip('[data-tooltip]');
+initTooltip.init();
+
+const initOpenSectionForm = new openSectionForm(
+  '[data-form="toggleForm"]',
+  '[data-form="form"]'
+);
+initOpenSectionForm.init();
 
 const initAccordionList = new AccordionList('[data-anime="accordion"] dt');
 initAccordionList.init();
