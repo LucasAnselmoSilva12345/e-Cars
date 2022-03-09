@@ -1,6 +1,6 @@
-# e-Cars
+# ![](assets/documentation/e-Cars.png)
 
-Sua plataforma compra e venda de carros e motos.
+Sua plataforma de compra e venda de carros e motos.
 
 [Version this documentation in English]()
 
@@ -39,7 +39,7 @@ A e-Cars é um projeto de estudo relacionado as práticas em desenvolvimento web
 
 ## Como executar esse projeto
 
-Para executar o site, tenha certeza que você tem o [Git]() instalado em sua maquina, e extensão [Live Server]() adicionada no seu Visual Studio Code
+Para executar o site, tenha certeza que você tem o [Git](https://git-scm.com/) instalado em sua maquina, e extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) adicionada no seu Visual Studio Code
 
 1. Faça o clone desse repositório através do comando:
 
@@ -57,7 +57,7 @@ $ cd e-cars
 
 ```
 
-Obs. Para realizar a execução do comando no próximo passo, tenha garantia que tenha o [node]() instalado em sua maquina para poder utilizar o `npm`. Ou caso prefira instalar as dependências via `yarn` tenha garantia que tem o [yarn]() instalado em sua maquina.
+Obs. Para realizar a execução do comando no próximo passo, tenha garantia que tenha o [node](https://nodejs.org/en/) instalado em sua maquina para poder utilizar o `npm`. Ou caso prefira instalar as dependências via `yarn` tenha garantia que tem o [yarn](https://yarnpkg.com/) instalado em sua maquina.
 
 3. Após entrar na pasta do projeto, rode o comando:
 

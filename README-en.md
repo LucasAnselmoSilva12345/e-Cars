@@ -1,4 +1,4 @@
-# e-Cars
+# ![](assets/documentation/e-Cars.png)
 
 Your platform buys and sells cars and motorcycles.
 
@@ -39,7 +39,7 @@ e-Cars is a study project related to Front-end web development practices, so thi
 
 ## How to run this project
 
-To run the site, make sure you have [Git]() instaled on your machine, and [Live Server]() extension added to your Visual Studio Code.
+To run the site, make sure you have [Git](https://git-scm.com/) instaled on your machine, and [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension added to your Visual Studio Code.
 
 1. Clone this repository using the command:
 
@@ -57,7 +57,7 @@ $ cd e-cars
 
 ```
 
-Note. To execute the command in the next step, make sure you have [node]() installed on your machine to be able to use `npm`. Or if you prefer to install the depedencies via `yarn`, make sure you have [yarn]() installed on your machine.
+Note. To execute the command in the next step, make sure you have [node](https://nodejs.org/en/) installed on your machine to be able to use `npm`. Or if you prefer to install the depedencies via `yarn`, make sure you have [yarn](https://yarnpkg.com/) installed on your machine.
 
 3. After entering the project folder, run the command:
 
