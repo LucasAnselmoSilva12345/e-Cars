@@ -59,7 +59,7 @@ $ cd e-cars
 
 Obs. Para realizar a execução do comando no próximo passo, tenha garantia que tenha o [node]() instalado em sua maquina para poder utilizar o `npm`. Ou caso prefira instalar as dependências via `yarn` tenha garantia que tem o [yarn]() instalado em sua maquina.
 
-3. Após entrar da pasta do projeto, rode o comando:
+3. Após entrar na pasta do projeto, rode o comando:
 
 ```sh
 
