@@ -2,7 +2,7 @@
 
 Your platform buys and sells cars and motorcycles.
 
-[Version this documentation in English]()
+[Version this documentation in Portuguese](https://github.com/LucasAnselmoSilva12345/e-Cars/blob/main/README.md)
 
 ## About this project
 
