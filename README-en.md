@@ -25,9 +25,9 @@ In this project, the following tecnnologies were used:
 - [Babel](https://babeljs.io/)
 - [Webpack](https://webpack.js.org/)
 
-### Deploy
+### Tools to Deploy
 
-[Cloudflare Pages](https://pages.cloudflare.com/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## Purpose of this project
 
@@ -35,7 +35,7 @@ e-Cars is a study project related to Front-end web development practices, so thi
 
 ## Go to the website
 
-[e-Cars](https://e-cars.pages.dev/)
+- [e-Cars](https://e-cars.pages.dev/)
 
 ## How to run this project
 

@@ -25,9 +25,9 @@ Nesse projeto, foram utilizadas as seguintes tecnologias:
 - [Babel](https://babeljs.io/)
 - [Webpack](https://webpack.js.org/)
 
-### Deploy
+### Ferramente para deploy
 
-[Cloudflare Pages](https://pages.cloudflare.com/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## Objetivo desse projeto
 
@@ -35,7 +35,7 @@ A e-Cars é um projeto de estudo relacionado as práticas em desenvolvimento web
 
 ## Acesse o site
 
-[e-Cars](https://e-cars.pages.dev/)
+- [e-Cars](https://e-cars.pages.dev/)
 
 ## Como executar esse projeto
 
